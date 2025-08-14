@@ -23,12 +23,12 @@ class Http_Routes
 		} else {
 			$this->_module = self::DEFAULT_MODULE;
 		}
-		if ($routes[2]){
-			$this->_controller = $routes[2];
+		if (isset($routes[2])){
+			$this->_controller =  $routes[2];
 		} else{
 			$this->_controller = self::DEFAULT_CONTROLLER;
 		}
-		if ($routes[3]){
+		if (isset($routes[3])){
 			$this->_action = $routes[3];
 		} else {
 		 	$this->_action = self::DEFAULT_ACTION;
