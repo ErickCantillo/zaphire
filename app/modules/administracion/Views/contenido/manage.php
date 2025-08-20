@@ -28,7 +28,7 @@
 			<div class="row">
 				<div class="col-12">
 					<h2 class="content-title">
-						Content Type
+						tipo de contenido
 					</h2>
 				</div>
 				<input type="hidden" name="contenido_padre"
@@ -71,7 +71,7 @@
 				<?php } ?>
 				<?php if ($this->mostrartipos == 1 || $padre == 0 || $padre == '') { ?>
 					<div class="col-3 form-group">
-						<label class="control-label">Type</label>
+						<label class="control-label">Tipo</label>
 						<label class="input-group">
 							<div class="input-group-prepend">
 								<span class="input-group-text input-icono  fondo-verde "><i class="far fa-list-alt"></i></span>
@@ -135,7 +135,7 @@
 				<div
 					class="col-3  form-group no-banner no-carrousel no-acordion si-seccion ">
 
-					<label class="control-label ">Alignment</label>
+					<label class="control-label ">Alineación</label>
 					<label class="input-group">
 						<div class="input-group-prepend">
 							<span class="input-group-text input-icono  fondo-verde "><i class="fas fa-align-center"></i></span>
@@ -236,7 +236,7 @@
 					<div class="col-10 form-group no-banner no-seccion si-carrousel no-acordion si-contenido2 "
 						<?php if (($tipo != 2 && $tipo != 4 && $tipo != 5 && $tipo != 6) || $tipo == 0) { ?> style="display: none;"
 						<?php } ?>>
-						<label for="contenido_disenio" class="control-label">Content Layout</label>
+						<label for="contenido_disenio" class="control-label">Diseño del contenido</label>
 						<div class="row">
 							<div class="col-3">
 								<label class="radio-disenio">
@@ -279,7 +279,7 @@
 									<input type="radio" value="5" <?php if ($this->content->contenido_disenio == '5') { ?> checked <?php } ?>
 										name="contenido_disenio" id="contenido_disenio" class="form-control">
 									<span>
-										<img src="/skins/administracion/images/forma4.png">
+										<img src="/skins/administracion/images/forma5.png">
 									</span>
 								</label>
 							</div>
