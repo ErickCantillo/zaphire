@@ -10,15 +10,13 @@
   <!-- Jquery -->
   <script src="/components/jquery/jquery-3.6.0.min.js"></script>
 
+
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="/components/bootstrap-5.3/css/bootstrap.min.css">
-  <!-- Slick CSS -->
-  <link rel="stylesheet" href="/components/slick/slick/slick.css">
-  <link rel="stylesheet" href="/components/slick/slick/slick-theme.css">
-
 
   <!-- Global CSS -->
   <link rel="stylesheet" href="/skins/page/css/global.css?v=2">
+  <link rel="stylesheet" href="/src/output.css">
   <link rel="stylesheet" href="/skins/page/css/responsive.css?v=2">
 
   <!-- FontAwesome -->
@@ -30,11 +28,15 @@
 
   <link rel="shortcut icon" href="/images/<?= $infopage->info_pagina_favicon; ?>">
   <!-- Fancybox -->
+
   <link rel="stylesheet" href="/components/fancybox/carousel.css" />
   <link rel="stylesheet" href="/components/fancybox/thumbs.css" />
   <link rel="stylesheet" href="/components/fancybox/fancybox.css" />
   <script src="/components/fancybox/thumbs.js"></script>
   <script src="/components/fancybox/fancybox.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
 
 
   <script type="text/javascript" id="www-widgetapi-script"
@@ -44,10 +46,6 @@
   <!-- Bootstrap Js -->
   <script src="/components/bootstrap-5.3/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Slick JS -->
-  <script src="/components/slick/slick/slick.min.js"></script>
-
-
   <!-- SweetAlert -->
   <script src="/components/sweetalert/sweetalert.js"></script>
 
@@ -55,23 +53,12 @@
   <script src="/skins/page/js/main.js?v=2"></script>
   <!-- metacolor -->
   <meta name="theme-color" content="#5475a1">
-  <!-- Recaptcha -->
-  <?php 
-    // Obtener el idioma actual para reCAPTCHA
-    $lang_selected = 'es';
-    if(isset($_GET['lang'])){
-      $lang_selected = $_GET['lang'];
-    } else if (isset($_COOKIE['user_lang'])) {
-      $lang_selected = $_COOKIE['user_lang'];
-    }
-    // Mapear idiomas a códigos de reCAPTCHA
-    $recaptcha_lang = $lang_selected == 'en' ? 'en' : 'es';
-  ?>
-  <script src='https://www.google.com/recaptcha/api.js?hl=<?= $recaptcha_lang ?>'></script>
+
+  <script src='https://www.google.com/recaptcha/api.js?hl=es'></script>
   <meta name="description" content="<?= $this->_data['meta_description']; ?>" />
   <meta name=" keywords" content="<?= $this->_data['meta_keywords']; ?>" />
   <?php echo $this->_data['scripts']; ?>
-  <script src="https://www.google.com/recaptcha/api.js?hl=<?= $recaptcha_lang ?>" async defer></script>
+  <script src="https://www.google.com/recaptcha/api.js?hl=es" async defer></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWYVxdF4VwIPfmB65X2kMt342GbUXApwQ&sensor=true"></script>
@@ -83,7 +70,7 @@
     var point = false;
     var zoom = 10;
 
-    function setValuesMap (longitud, latitud, punto, zoomm, icono) {
+    function setValuesMap(longitud, latitud, punto, zoomm, icono) {
       longitude = longitud;
       latitude = latitud;
       if (punto) {
@@ -97,7 +84,7 @@
       }
     }
 
-    function initializeMap () {
+    function initializeMap() {
       var mapOptions = {
         zoom: parseInt(zoom),
         center: new google.maps.LatLng(longitude, longitude),

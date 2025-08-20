@@ -1,5 +1,5 @@
 <?php
-define('DEFAULT_TITLE', 'Alobien CS');// titulo general para toda la pagina
+define('DEFAULT_TITLE', 'Zaphire');// titulo general para toda la pagina
 
 $config = array(); //
 

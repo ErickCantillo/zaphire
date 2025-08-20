@@ -17,7 +17,7 @@
   <div class="header-bx-right">
     <div class="user-info-wrapper">
       <i class="fa-solid fa-user"></i>
-      <strong>Welcome:</strong>
+      <strong>Bienvenido:</strong>
       <span><?php echo $_SESSION['kt_login_name']; ?></span>
     </div>
     <div class="logout-wrapper">
