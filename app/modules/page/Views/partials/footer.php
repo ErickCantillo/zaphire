@@ -14,13 +14,14 @@
         <div class="info">
           <span class="info-footer d-flex gap-2 align-items-center justify-content-center justify-content-lg-center">
 
+            <?php echo $infopage->info_pagina_correos_contacto ?>
+          </span>
+          <span class="info-footer d-flex gap-2 align-items-center justify-content-center justify-content-lg-center">
+
             <?php echo $infopage->info_pagina_telefono ?>
           </span>
 
-          <span class="info-footer d-flex gap-2 align-items-center justify-content-center justify-content-lg-center">
-
-            <?php echo $infopage->info_pagina_correos_contacto ?>
-          </span>
+          
 
           <span class="info-footer d-flex gap-2 align-items-center justify-content-center justify-content-lg-center">
 
