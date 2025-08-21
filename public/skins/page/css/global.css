@@ -390,12 +390,11 @@ footer .icons-redes a {
 }
 
 footer .icons-redes a i {
-  background-color: var(--accent-color);
-  color: var(--tertiary-color);
+  color: var(--accent-color);
   padding: 5px;
   border-radius: 5px;
   aspect-ratio: 1 / 1;
-  width: 26px;
+  width: 50px;
   display: grid;
   place-items: center;
 }
