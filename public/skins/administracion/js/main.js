@@ -49,7 +49,7 @@ $(document).ready(function () {
       "template",
     ],
     contextmenu: false,
-    // language: "es",
+    language: "es",
 
     templates: [
       {

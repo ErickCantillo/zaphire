@@ -352,7 +352,7 @@ class Administracion_publicidadController extends Administracion_mainController
     $data['publicidad_texto_enlace'] = $this->_getSanitizedParam("publicidad_texto_enlace");
     $data['publicidad_descripcion_en'] = $this->_getSanitizedParamHtml("publicidad_descripcion_en");
     $data['publicidad_enlace_alineacion'] = $this->_getSanitizedParam("publicidad_enlace_alineacion");
-        if ($this->_getSanitizedParam("mostrarinfo") == '') {
+    if ($this->_getSanitizedParam("mostrarinfo") == '') {
       $data['mostrarinfo'] = '0';
     } else {
       $data['mostrarinfo'] = $this->_getSanitizedParam("mostrarinfo");
@@ -374,13 +374,12 @@ class Administracion_publicidadController extends Administracion_mainController
     $array['101'] = 'PopUp';
 
     // HOME
-    $array['1'] = 'Banners Home';
-    $array['2'] = 'Banners Nosotros';
-    $array['3'] = 'Banners Productos';
-    $array['4'] = 'Banners Servicios';
-    $array['5'] = 'Banners Galería';
-    $array['6'] = 'Banners Clientes';
-    $array['7'] = 'Banners Contacto';
+    $array['1'] = 'Banner Inicio';
+    $array['2'] = 'Banner Nosotros';
+    $array['3'] = 'Banner Servicios';
+    $array['4'] = 'Banner Clientes';
+    $array['5'] = 'Banner Blogs';
+    $array['6'] = 'Banner Contacto';
 
     return $array;
   }

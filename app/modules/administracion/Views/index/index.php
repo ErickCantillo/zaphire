@@ -16,7 +16,7 @@
     <div class="form-group my-4">
       <label class="control-label sr-only">Contraseña</label>
       <div class="input-group">
-        <input type="password" class="form-control login-input" id="password" name="password" placeholder="Contraseña" required>
+        <input type="password" class="form-cnaontrol login-input" id="password" name="password" placeholder="Contraseña" required>
         <div class="help-block with-errors"></div>
       </div>
     </div>
