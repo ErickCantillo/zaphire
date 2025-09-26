@@ -113,9 +113,10 @@
 
 .nav-contact {
     background: transparent;
-    border: 0;
-    color: #FE7300;
+    border: 2px solid #FE7300;
+    color: #ffffff;
     font-weight: 600;
+    background: #FE7300;
 }
 
 .nav-contact:hover {
