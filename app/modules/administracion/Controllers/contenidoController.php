@@ -422,6 +422,12 @@ class Administracion_contenidoController extends Administracion_mainController
 	{
 		$array = array();
 		$array['1'] = 'Home';
+		$array['2'] = 'Nosotros';
+		$array['3'] = 'Productos';
+		$array['4'] = 'Servicios';
+		$array['5'] = 'Galería';
+		$array['6'] = 'Clientes';
+		$array['7'] = 'Contacto';
 		return $array;
 	}
 
@@ -435,7 +441,7 @@ class Administracion_contenidoController extends Administracion_mainController
 	{
 		$padre = $this->mainModel->getById($idpadre);
 		$array = array();
-		if ($padre == 0) {
+		if (!$padre) {
 			$array['1'] = 'Banner';
 			$array['2'] = 'Contenedor';
 			$array['3'] = 'Contenido Simple';

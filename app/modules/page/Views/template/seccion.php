@@ -4,7 +4,7 @@
 		contenedor-seccion 
 		<?php if ($contenedor->contenido_fondo_imagen_tipo == 2) { ?>dinamica<?php } ?>" data-aos
 	style="background-image:url(/images/<?php echo $contenedor->contenido_fondo_imagen; ?>);   background-size: cover; background-color:<?php echo $contenedor->contenido_fondo_color; ?> ;">
-	<div class="content-box container">
+	<div class="content-box">
 		<?php if ($contenedor->contenido_titulo_ver == 1) { ?>
 			<h2><?php echo $contenedor->contenido_titulo; ?></h2>
 		<?php } ?>

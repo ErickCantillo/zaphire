@@ -53,7 +53,7 @@
               <?php } ?>
               <?php if ($banner->mostrarinfo == 1) { ?>
                 <div class="contenido-banner">
-                  <div class="container">
+                  <div class="">
                     <div class="info-banner">
 
                       <?php echo $banner->publicidad_descripcion; ?>
@@ -108,7 +108,7 @@
               <?php } ?>
               <?php if ($banner->mostrarinfo == 1) { ?>
                 <div class="contenido-banner">
-                  <div class="container">
+                  <div class="">
                     <div class="info-banner">
 
                       <?php echo $banner->publicidad_descripcion; ?>

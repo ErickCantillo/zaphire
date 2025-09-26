@@ -4,11 +4,19 @@
     <li <?php if ($this->botonpanel == 1) { ?>class="activo" <?php } ?>>
       <a href="/administracion/panel">
         <i class="fas fa-info-circle"></i> 
-        Page Information
+        Información de la Página
       </a>
     </li>
   <?php } ?>
- 
+  <li class="nav-item <?php if ($this->botonpanel == 2) { ?>active<?php } ?>">
+    <a href="/administracion/publicidad" class="nav-link">
+      <div class="nav-icon">
+        <i class="far fa-images"></i>
+      </div>
+      <span class="nav-text">Administrador de Publicidad</span>
+      <div class="nav-indicator"></div>
+    </a>
+  </li>
   <li <?php if ($this->botonpanel == 3) { ?>class="activo" <?php } ?>>
     <a href="/administracion/contenido">
       <i class="fas fa-file-invoice"></i> 
@@ -19,7 +27,7 @@
     <li <?php if ($this->botonpanel == 4) { ?>class="activo" <?php } ?>>
       <a href="/administracion/usuario">
         <i class="fas fa-users"></i> 
-        Manage Users
+        Administrar Usuarios
       </a>
     </li>
   <?php } ?>

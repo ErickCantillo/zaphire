@@ -178,65 +178,93 @@ body {
 }
 
 /* Aplicar fuente Teachers a todos los elementos de texto */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Teachers', sans-serif;
-  font-weight: 700; /* Bold para títulos */
+  font-weight: 700;
+  /* Bold para títulos */
 }
 
-p, span, div, a, li, td, th, label, input, textarea, select, button {
+p,
+span,
+div,
+a,
+li,
+td,
+th,
+label,
+input,
+textarea,
+select,
+button {
   font-family: 'Teachers', sans-serif;
 }
 
 /* Estilos específicos para diferentes elementos */
 h1 {
-  font-weight: 800; /* ExtraBold */
+  font-weight: 800;
+  /* ExtraBold */
   font-size: 2.5rem;
   line-height: 1.2;
 }
 
 h2 {
-  font-weight: 700; /* Bold */
+  font-weight: 700;
+  /* Bold */
   font-size: 2rem;
   line-height: 1.3;
 }
 
 h3 {
-  font-weight: 600; /* SemiBold */
+  font-weight: 600;
+  /* SemiBold */
   font-size: 1.5rem;
   line-height: 1.4;
 }
 
 h4 {
-  font-weight: 600; /* SemiBold */
+  font-weight: 600;
+  /* SemiBold */
   font-size: 1.25rem;
   line-height: 1.4;
 }
 
 h5 {
-  font-weight: 500; /* Medium */
-  font-size: 1.125rem;
+  font-weight: 500;
+  /* Medium */
+  font-size: 2vh;
   line-height: 1.4;
 }
 
 h6 {
-  font-weight: 500; /* Medium */
+  font-weight: 500;
+  /* Medium */
   font-size: 1rem;
   line-height: 1.4;
 }
 
 p {
-  font-weight: 400; /* Regular */
+  font-weight: 400;
+  /* Regular */
   line-height: 1.6;
 }
 
 a {
-  font-weight: 500; /* Medium para enlaces */
+  font-weight: 500;
+  /* Medium para enlaces */
   text-decoration: none;
   transition: all 0.3s ease;
 }
 
-button, input[type="submit"], input[type="button"] {
-  font-weight: 600; /* SemiBold para botones */
+button,
+input[type="submit"],
+input[type="button"] {
+  font-weight: 600;
+  /* SemiBold para botones */
 }
 
 /* Clases utilitarias para diferentes pesos de fuente */
@@ -337,11 +365,7 @@ header {
 
 }
 
-header .nav-link {
-  color: var(--tertiary-color);
-  font-size: 20px;
-  font-weight: 500;
-}
+
 
 header .nav-link:hover {
   color: var(--primary-color);
@@ -379,7 +403,7 @@ footer .info {
 
 
 footer .info-footer {
-  font-size: 18px;
+  font-size: 1.5vh;
   font-weight: 200;
 }
 
@@ -394,7 +418,8 @@ footer .icons-redes a i {
   padding: 5px;
   border-radius: 5px;
   aspect-ratio: 1 / 1;
-  width: 50px;
+  width: 4vh;
+  font-size: 2vh;
   display: grid;
   place-items: center;
 }
@@ -537,18 +562,11 @@ FLOTANTES FIN
 
 .img-banner {
   width: 100%;
-  height: 500px;
+  height: 70vh;
   aspect-ratio: 28/9;
   object-fit: cover;
 }
 
-@media (width > 1700px) {
-
-  .img-banner {
-    height: 800px;
-
-  }
-}
 
 .carousel-control-prev-icono {
   font-size: 30px;
@@ -591,15 +609,13 @@ FLOTANTES FIN
 
 .contenido-banner {
   position: absolute;
-  width: 100%;
-
-  /* display: grid; */
-  /* align-items: center; */
-
+  width: 50%;
   font-weight: 800;
-  padding-top: 150px;
-  padding-bottom: 20px;
-  bottom: 0px;
+  margin-left: 5vw;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
 }
 
 .contenido-banner>.container {
@@ -727,7 +743,7 @@ FLOTANTES FIN
 }
 
 .contenedor-seccion {
-  padding: 40px 0;
+  padding: 8vh 2vw;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -735,10 +751,13 @@ FLOTANTES FIN
 .content-box>h2 {
   text-align: center;
   font-weight: 600;
-  color: var(--primary-color);
+  font-size: 4vh;
+  text-transform: capitalize;
+  font-family: 'Teachers', sans-serif;
+  color: #FE7300;
 }
 
-.content-box>h2::after {
+/* .content-box>h2::after {
   content: "";
   display: block;
   width: 50px;
@@ -746,7 +765,7 @@ FLOTANTES FIN
   background-color: var(--secondary-color);
   margin: 5px auto;
 
-}
+} */
 
 /* Banner internas */
 
@@ -767,8 +786,8 @@ FLOTANTES FIN
 .img-banner-interna {
   height: 350px;
   width: 100%;
-  object-fit: cover;
-  filter: brightness(0.5);
+  /* object-fit: cover; */
+  /* filter: brightness(0.5); */
 }
 
 .carousel-indicators .active {
@@ -808,6 +827,7 @@ FLOTANTES FIN
 
 .descripcion p {
   margin: 0;
+  font-size: 3vh;
 }
 
 /* Nuestros clientes */
@@ -1140,10 +1160,12 @@ FIN GALERIA
 }
 
 .contenido-nosotros .caja-contenido-simple>h2 {
-  color: var(--gris-medio);
+  text-align: center;
   font-weight: 600;
-  margin-bottom: 15px;
-  font-size: 25px;
+  font-size: 3vh;
+  text-transform: capitalize;
+  font-family: 'Teachers', sans-serif;
+  color: #FE7300;
 }
 
 .btn-vermas {
@@ -1171,6 +1193,7 @@ FIN GALERIA
 
 .contenido-nosotros .caja-contenido-simple .img-fluid {
   display: block;
+  width: 40vw;
   margin: 0 auto;
 }
 
@@ -1184,6 +1207,7 @@ FIN GALERIA
   /* margin-bottom: 1.5rem; */
   gap: 5px;
 }
+
 .contenido-nosotros .design-five {
   width: 100%;
   height: 100%;
@@ -1192,12 +1216,37 @@ FIN GALERIA
   padding: 10px;
 }
 
-.contenido-nosotros  .design-five .img-fluid {
+.contenido-nosotros .design-five .img-fluid {
 
   width: 100%;
   height: 100%;
   object-fit: contain;
   max-width: 150px;
+}
+
+
+.content-box {
+  margin: 0 4vw;
+    padding: 8vh 4vw;
+}
+
+.descripcion-seccion h2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-weight: 600;
+  font-size: 4vh;
+  text-transform: capitalize;
+  font-family: 'Teachers', sans-serif;
+  color: #FE7300;
+  margin-bottom: 4vh;
+}
+.descripcion-seccion h4 {
+  font-size: 2.5vh;
+}
+
+.descripcion-seccion h2 img{
+  width: 10vw;
 }
 
 /* Servicios */
@@ -1206,12 +1255,58 @@ FIN GALERIA
   padding: 15px 0;
 }
 
+.design-three .imagen-contenido {
+  position: absolute;
+  /* width: 100%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+  top: -8vh;
+  transform: translateX(-50%);
+  max-width: 12vh !important;
+}
+
+.id_19 {
+  padding: 10vh 0 !important;
+}
+
 .contenedor-contacto {
   padding: 15px;
 }
 
+.three-24 {
+  width: 40vw;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.5);
+  margin: 2vh 4vw;
+  padding: 4vh 2vw;
+}
+
+.three h2 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 2vh;
+  text-transform: capitalize;
+  font-family: 'Teachers', sans-serif;
+  color: #FE7300;
+}
+
+.three-20 {
+  width: 40vw;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.5);
+  margin: 2vh 4vw;
+  padding: 4vh 2vw;
+}
+
 .descripcion-seccion>p {
   margin: 0;
+  font-size: 2vh;
+  color: var(--gris-medio);
+  text-align: center;
 }
 
 .contenido-nosotros .caja-contenido-simple .descripcion {
@@ -1284,7 +1379,7 @@ FIN GALERIA
 
 .contenido-servicios .id_46 .design-five {
   overflow: hidden;
-display: grid;
+  display: grid;
   place-items: center;
   transition: all 300ms ease;
   border-radius: 10px;
@@ -1301,3 +1396,7 @@ display: grid;
   width: 14%;
 }
 
+
+.footer-section {
+  padding-top: 3vh;
+}

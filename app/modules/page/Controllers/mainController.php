@@ -11,7 +11,7 @@ class Page_mainController extends Controllers_Abstract
 	public $template;
 
 	public $botonactivo ;
-	public $len;
+	
 	
 
 	public function init()

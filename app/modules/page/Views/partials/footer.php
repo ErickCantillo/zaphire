@@ -1,8 +1,8 @@
 <section class="footer-section">
-  <div class="container">
+  <div class="">
     <div class="row gap-3 gap-lg-0">
-      <div class="col-12 col-lg-4">
-        <img src="/images/logo.png" alt="Logo Alobien" class="img-fluid d-block m-auto">
+      <div class="col-12 col-lg-4 px-2 ">
+        <img src="/images/logo.png" alt="Logo Alobien" class="img-fluid d-block m-auto nav-logo">
       </div>
       <?php $infopageModel = new Page_Model_DbTable_Informacion();
       $infopage = $infopageModel->getById(1);
@@ -110,7 +110,7 @@
       </div>
       <div class="col-12">
         <hr>
-        <span class="text-center d-block">
+        <span class="text-center d-block" style="font-size: 2vh;">
           &copy;<?= $this->len['all_rights_reserved'] ?> Filsa <?php echo date('Y'); ?>
         </span>
       </div>

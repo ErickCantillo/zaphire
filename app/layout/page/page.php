@@ -25,7 +25,6 @@
   <!-- AOS -->
   <link rel="stylesheet" href="/components/aos-master/dist/aos.css">
   <script src="/components/aos-master/dist/aos.js"></script>
-
   <link rel="shortcut icon" href="/images/<?= $infopage->info_pagina_favicon; ?>">
   <!-- Fancybox -->
 
@@ -41,6 +40,7 @@
 
   <script type="text/javascript" id="www-widgetapi-script"
     src="https://s.ytimg.com/yts/jsbin/www-widgetapi-vflS50iB-/www-widgetapi.js" async=""></script>
+    <script src="/scripts/header-scroll.js"></script>
 
   <!-- Popper -->
   <!-- Bootstrap Js -->
@@ -112,6 +112,7 @@
     <?= $this->_data['footer']; ?>
   </footer>
   <?= $this->_data['adicionales']; ?>
+
 </body>
 
 </html>

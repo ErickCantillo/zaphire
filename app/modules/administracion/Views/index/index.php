@@ -2,22 +2,21 @@
   <div class="row">
     <div class="col-12">
       <h2>
-        <span>Module</span><br>
-        <span>ADMINISTRATION</span><br>
-        <span>WELCOME</span>
+        <span>Modulo</span><br>
+        <span>ADMINISTRACIÓN</span><br>
       </h2>
     </div>
     <div class="form-group mt-4">
-      <label class="control-label sr-only">User</label>
+      <label class="control-label sr-only">Usuario</label>
       <div class="input-group">
-        <input type="text" class="form-control login-input" id="user" name="user" placeholder="User" required>
+        <input type="text" class="form-control login-input" id="user" name="user" placeholder="Usuario" required>
         <div class="help-block with-errors"></div>
       </div>
     </div>
     <div class="form-group my-4">
-      <label class="control-label sr-only">Password</label>
+      <label class="control-label sr-only">Contraseña</label>
       <div class="input-group">
-        <input type="password" class="form-control login-input" id="password" name="password" placeholder="Password" required>
+        <input type="password" class="form-control login-input" id="password" name="password" placeholder="Contraseña" required>
         <div class="help-block with-errors"></div>
       </div>
     </div>

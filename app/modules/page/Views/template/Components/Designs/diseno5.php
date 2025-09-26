@@ -15,15 +15,7 @@
 </div>
 
 <style>
-    .titulo-5 p {
-        font-size: 2.5rem;
-        font-family: "Audiowide", sans-serif;
-        color: #FE7300;
-        background: transparent;
-        border: 0;
-        font-weight: 300;
-    }
-
+   
     .design-5 {
         min-width: 40vw;
         padding-left: 5vw;
