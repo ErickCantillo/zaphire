@@ -1333,7 +1333,7 @@ FIN GALERIA
 
 .content-box {
   margin: 0 4vw;
-  padding: 8vh 4vw;
+  padding: 3vh 4vw;
 }
 
 .descripcion-seccion h2 {
@@ -1374,9 +1374,7 @@ FIN GALERIA
   max-width: 12vh !important;
 }
 
-.id_19 {
-  padding: 10vh 0 !important;
-}
+
 
 .contenedor-contacto {
   padding: 15px;
