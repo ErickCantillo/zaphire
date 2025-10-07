@@ -653,12 +653,10 @@ FLOTANTES FIN
 .contenido-banner-internas {
   position: absolute;
   width: 100%;
-
   height: 100%;
   display: grid;
   align-items: center;
-
-  padding: 0 5%;
+  padding: 50% 4%;
 }
 
 .contenido-banner-internas h4 {
@@ -796,7 +794,7 @@ FLOTANTES FIN
 }
 
 .img-banner-interna {
-  height: 350px;
+  height: 20vh;
   width: 100%;
   /* object-fit: cover; */
   /* filter: brightness(0.5); */
@@ -1180,31 +1178,37 @@ FIN GALERIA
   color: #FE7300;
 }
 
-.contenido-servicios dl, .contenido-servicios ol, .contenido-servicios ul {
-    list-style: disc;
-    /* font-size: 1vh !important; */
-    
-    /* padding-left: 40rem; */
+.contenido-servicios dl,
+.contenido-servicios ol,
+.contenido-servicios ul {
+  list-style: disc;
+  /* font-size: 1vh !important; */
+
+  /* padding-left: 40rem; */
 }
 
 .contenido-servicios section .content-box {
   margin-bottom: 2px #857df0 solid;
 }
-.contenido-servicios dl, .contenido-servicios ol, .contenido-servicios ul li p{
-  
-    font-size: 1.8vh !important;
-    
-    /* padding-left: 40rem; */
+
+.contenido-servicios dl,
+.contenido-servicios ol,
+.contenido-servicios ul li p {
+
+  font-size: 1.8vh !important;
+
+  /* padding-left: 40rem; */
 }
+
 .contenido-servicios .caja-contenido-simple>h2 {
-    text-align: left;
-    font-weight: 600;
-    font-size: 3vh;
-    text-transform: capitalize;
-    font-family: 'Teachers', sans-serif;
-    color: #FE7300;
-    width: fit-content;
-    border-bottom: 0.2vh #000000 solid;
+  text-align: left;
+  font-weight: 600;
+  font-size: 3vh;
+  text-transform: capitalize;
+  font-family: 'Teachers', sans-serif;
+  color: #FE7300;
+  width: fit-content;
+  border-bottom: 0.2vh #000000 solid;
 }
 
 
@@ -1403,8 +1407,8 @@ FIN GALERIA
 
 .contenido-servicios .columna-seccion {
   margin-top: 5vh;
-    padding-bottom: 4vh;
-    border-bottom: 1.5px #546cf1 solid;
+  padding-bottom: 4vh;
+  border-bottom: 1.5px #546cf1 solid;
 }
 
 /* .contenido-servicios .col-contenido{
@@ -1466,13 +1470,14 @@ FIN GALERIA
 
 .contenido-banner-internas div div .inicio {
   color: var(--tertiary-color);
-  margin-left:  2vw ;
+  margin-left: 2vw;
   text-transform: capitalize;
   font-size: 2vh;
 }
+
 .contenido-banner-internas div div {
   color: var(--accent-color);
-  margin-left:  2vw ;
+  margin-left: 2vw;
   text-transform: capitalize;
   font-size: 2vh;
 }
