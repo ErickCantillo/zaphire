@@ -48,9 +48,8 @@
                   
 
 
-                <?php if ($banner->mostrarinfo != 1 && $banner->publicidad_enlace) { ?>
                 </a>
-              <?php } ?>
+
               <?php if ($banner->mostrarinfo == 1) { ?>
                 <div class="contenido-banner">
                   <div class="container">
