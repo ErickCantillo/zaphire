@@ -36,7 +36,7 @@
 
           <?php } else { ?>
 
-            <div class="fondo-imagen d-none d-md-flex justify-content-start align-items-center">
+            <div class="fondo-imagen d-none d-md-flex justify-content-center align-items-center">
 
               <?php if ($banner->mostrarinfo != 1 && $banner->publicidad_enlace) { ?>
                 <a href="<?php echo $banner->publicidad_enlace; ?>" <?php echo $banner->publicidad_tipo_enlace == 1 ? 'target="_blank"' : ''; ?> class="w-100">
@@ -45,7 +45,7 @@
 
                 <img src="/images/<?php echo $banner->publicidad_imagen; ?>"
                   alt="Banner image <?php echo $banner->publicidad_nombre; ?>" class="img-banner">
-
+                  
 
 
                 <?php if ($banner->mostrarinfo != 1 && $banner->publicidad_enlace) { ?>
@@ -53,7 +53,7 @@
               <?php } ?>
               <?php if ($banner->mostrarinfo == 1) { ?>
                 <div class="contenido-banner">
-                  <div class="">
+                  <div class="container">
                     <div class="info-banner">
 
                       <?php echo $banner->publicidad_descripcion; ?>
@@ -108,7 +108,7 @@
               <?php } ?>
               <?php if ($banner->mostrarinfo == 1) { ?>
                 <div class="contenido-banner">
-                  <div class="">
+                  <div class="container">
                     <div class="info-banner">
 
                       <?php echo $banner->publicidad_descripcion; ?>
