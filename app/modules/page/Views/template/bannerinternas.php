@@ -35,11 +35,10 @@
 
                                 <img src="/images/<?php echo $banner->publicidad_imagen; ?>"
                                     alt="Banner <?php echo $banner->publicidad_nombre; ?>" class="img-banner-interna">
-                                <?php if ($banner->mostrarinfo == 1) { ?>
+                                
                                     <div class="contenido-banner-internas">
                                         <?php echo $banner->publicidad_descripcion; ?>
                                     </div>
-                                <?php } ?>
                                 <?php if ($banner->publicidad_enlace) { ?>
 
                                 </a>

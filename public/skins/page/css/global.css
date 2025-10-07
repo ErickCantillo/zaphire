@@ -1180,6 +1180,35 @@ FIN GALERIA
   color: #FE7300;
 }
 
+.contenido-servicios dl, .contenido-servicios ol, .contenido-servicios ul {
+    list-style: disc;
+    /* font-size: 1vh !important; */
+    
+    /* padding-left: 40rem; */
+}
+
+.contenido-servicios section .content-box {
+  margin-bottom: 2px #857df0 solid;
+}
+.contenido-servicios dl, .contenido-servicios ol, .contenido-servicios ul li p{
+  
+    font-size: 1.8vh !important;
+    
+    /* padding-left: 40rem; */
+}
+.contenido-servicios .caja-contenido-simple>h2 {
+    text-align: left;
+    font-weight: 600;
+    font-size: 3vh;
+    text-transform: capitalize;
+    font-family: 'Teachers', sans-serif;
+    color: #FE7300;
+    width: fit-content;
+    border-bottom: 0.2vh #000000 solid;
+}
+
+
+
 .btn-vermas {
   background-color: var(--secondary-color);
   color: var(--accent-color);
@@ -1239,7 +1268,7 @@ FIN GALERIA
 
 .content-box {
   margin: 0 4vw;
-    padding: 8vh 4vw;
+  padding: 8vh 4vw;
 }
 
 .descripcion-seccion h2 {
@@ -1253,11 +1282,12 @@ FIN GALERIA
   color: #FE7300;
   margin-bottom: 4vh;
 }
+
 .descripcion-seccion h4 {
   font-size: 2.5vh;
 }
 
-.descripcion-seccion h2 img{
+.descripcion-seccion h2 img {
   width: 10vw;
 }
 
@@ -1315,12 +1345,13 @@ FIN GALERIA
 }
 
 @media (max-width: 768px) {
+
   .three-24,
   .three-20 {
     width: 80vw;
     margin: 2vh auto;
   }
-  
+
 }
 
 .descripcion-seccion>p {
@@ -1362,17 +1393,8 @@ FIN GALERIA
   display: block;
 }
 
-.contenido-servicios ::marker {
-  color: var(--secondary-color);
-  font-weight: 600;
-}
 
-.contenido-servicios dl,
-.contenido-servicios ol,
-.contenido-servicios ul {
-  margin: 0;
-  padding-left: 1rem;
-}
+
 
 .contenido-servicios .caja-contenido-simple,
 .contenido-servicios .caja-contenido-simple>.row {
@@ -1380,7 +1402,9 @@ FIN GALERIA
 }
 
 .contenido-servicios .columna-seccion {
-  margin: 10px 0;
+  margin-top: 5vh;
+    padding-bottom: 4vh;
+    border-bottom: 1.5px #546cf1 solid;
 }
 
 /* .contenido-servicios .col-contenido{
@@ -1423,4 +1447,32 @@ FIN GALERIA
   background-color: var(--primary-color);
   color: var(--accent-color);
   margin-top: auto;
+}
+
+.contenido-banner-internas div {
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+.contenido-banner-internas div h1 {
+  font-weight: 600;
+  font-size: 5vh;
+  color: var(--tertiary-color);
+  font-family: 'Teachers', sans-serif;
+}
+
+.contenido-banner-internas div div .inicio {
+  color: var(--tertiary-color);
+  margin-left:  2vw ;
+  text-transform: capitalize;
+  font-size: 2vh;
+}
+.contenido-banner-internas div div {
+  color: var(--accent-color);
+  margin-left:  2vw ;
+  text-transform: capitalize;
+  font-size: 2vh;
 }
