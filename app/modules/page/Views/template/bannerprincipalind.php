@@ -49,7 +49,9 @@
 
 
                 </a>
-
+                <div>
+                  Esta es una prueba de funcionamiento del banner
+                </div>
               <?php if ($banner->mostrarinfo == 1) { ?>
                 <div class="contenido-banner">
                   <div class="container">
