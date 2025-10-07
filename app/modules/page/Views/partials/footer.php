@@ -1,5 +1,5 @@
 <section class="footer-section">
-  <div class="">
+  <div class="container">
     <div class="row gap-3 gap-lg-0">
       <div class="col-12 col-lg-4 px-2 ">
         <img src="/images/logo.png" alt="Logo Alobien" class="img-fluid d-block m-auto nav-logo">

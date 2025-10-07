@@ -644,15 +644,7 @@ FLOTANTES FIN
   font-size: 35px;
 }
 
-.three-37, .three-38 , .three-39 {
-  border: #000 solid 2px;
-  padding: 2vh 2vw;
-  background-color: rgba(255, 255, 255, 0.8);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  font-size: 2vh;
-  height: 19vh;
-}
+
 
 .three-37 h2, .three-38 h2, .three-39 h2 {
  
@@ -661,24 +653,59 @@ FLOTANTES FIN
 }
 
 
+
 .three-37 p, .three-38 p, .three-39 p {
   font-size: 2.5vh !important;
   margin-bottom: 10px;
   text-align: center !important;
 }
 
-
-
-/* Parent container should use flexbox or grid to equalize heights */
-.three-37, .three-38, .three-39 {
-  flex: 1;
-}
-
-/* If they are in a row container, add this to the parent */
 .row:has(.three-37, .three-38, .three-39) {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2%;
   align-items: stretch;
 }
+
+
+
+.three-37, .three-38, .three-39 {
+  border: #000 solid 2px;
+  padding: 2vh 2vw;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  font-size: 2vh;
+  width: 28vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  height: 100%;
+}
+
+
+@media (max-width: 768px) {
+  .row:has(.three-37, .three-38, .three-39) {
+    grid-template-columns: 1fr;
+    gap: 3vh;
+  }
+
+  .three-37, .three-38, .three-39 {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 992px) and (min-width: 769px) {
+  .row:has(.three-37, .three-38, .three-39) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .three-37, .three-38, .three-39 {
+    width: 40vw;
+  }
+}
+
+
 .three-37
 .contenido-banner .btn-blue {
   width: fit-content;
