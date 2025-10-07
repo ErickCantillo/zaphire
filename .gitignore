@@ -10,5 +10,5 @@ package-lock.json
 package.json
 public/public.zip
 sql
-config/config.php
+/app/config/config.php
 
