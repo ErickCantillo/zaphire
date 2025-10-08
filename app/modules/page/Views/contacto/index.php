@@ -92,7 +92,7 @@
     font-weight: 600;
     margin-bottom: 0.5rem;
     font-size: 0.95rem;
-    text-transform: uppercase;
+    text-transform: none;
     letter-spacing: 0.5px;
   }
 
@@ -437,19 +437,19 @@
           <form id="formularioContacto" action="#" method="POST">
             <div class="fila-campos">
               <div class="grupo-campo">
-                <label for="nombre">Nombre Completo *</label>
+                <label for="nombre">Nombre completo *</label>
                 <input type="text" id="nombre" name="nombre" class="campo-input" placeholder="Tu nombre completo" required>
               </div>
 
               <div class="grupo-campo">
-                <label for="email">Correo Electrónico *</label>
+                <label for="email">Correo electrónico *</label>
                 <input type="email" id="email" name="email" class="campo-input" placeholder="tu@email.com" required>
               </div>
             </div>
 
             <div class="fila-campos">
               <div class="grupo-campo">
-                <label for="telefono">Teléfono de Contacto *</label>
+                <label for="telefono">Teléfono de contacto *</label>
                 <input type="tel" id="telefono" name="telefono" class="campo-input" placeholder="Tu número de teléfono" required>
               </div>
 
@@ -465,7 +465,7 @@
             </div>
 
             <div class="grupo-campo">
-              <label for="mensaje">Comentario o Mensaje *</label>
+              <label for="mensaje">Comentario o mensaje *</label>
               <textarea id="mensaje" name="mensaje" class="campo-input campo-textarea" placeholder="Cuéntanos lo que necesitas..." required></textarea>
             </div>
 
@@ -475,7 +475,7 @@
                 <div class="checkmark"></div>
               </div>
               <label for="politicas" class="texto-checkbox">
-                Acepto las <a href="#" data-bs-toggle="modal" data-bs-target="#modalPoliticas">Políticas de Privacidad</a> y autorizo el tratamiento de mis datos personales.
+                Acepto las <a href="#" data-bs-toggle="modal" data-bs-target="#modalPoliticas">políticas de privacidad</a> y autorizo el tratamiento de mis datos personales.
               </label>
             </div>
 
@@ -485,7 +485,7 @@
             </div>
 
             <button type="submit" class="btn-enviar">
-              <i class="fas fa-paper-plane"></i> Enviar Mensaje
+              <i class="fas fa-paper-plane"></i> Enviar mensaje
             </button>
           </form>
         </div>
