@@ -1244,7 +1244,7 @@ FIN GALERIA
   font-weight: 600;
   font-size: 3vh;
   text-transform: capitalize;
-  font-family: 'Teachers', sans-serif;
+  font-family: 'Audiowide', sans-serif;
   color: #FE7300;
 }
 
@@ -1275,7 +1275,7 @@ FIN GALERIA
   font-weight: 600;
   font-size: 3vh;
   text-transform: capitalize;
-  font-family: 'Teachers', sans-serif;
+  font-family: 'Audiowide', sans-serif;
   color: #FE7300;
   width: fit-content;
   border-bottom: 0.2vh #000000 solid;
@@ -1431,8 +1431,6 @@ FIN GALERIA
   font-size: 2vh;
   color: var(--gris-medio);
   text-align: center;
-  font-family: 'Audiowide', sans-serif;
-  font-weight: 300;
 
 }
 
