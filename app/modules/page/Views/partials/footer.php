@@ -111,7 +111,7 @@
       <div class="col-12">
         <hr>
         <span class="text-center d-block" style="font-size: 2vh;">
-          &copy;<?= $this->len['all_rights_reserved'] ?> Filsa <?php echo date('Y'); ?>
+          &copy; ©Todos los Derechos Reservados <?php echo date('Y'); ?> - Desarrollado por Omega Soluciones Web
         </span>
       </div>
     </div>
