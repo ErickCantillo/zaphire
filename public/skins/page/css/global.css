@@ -646,15 +646,19 @@ FLOTANTES FIN
 
 
 
-.three-37 h2, .three-38 h2, .three-39 h2 {
- 
+.three-37 h2,
+.three-38 h2,
+.three-39 h2 {
+
   font-size: 2.5vh !important;
   margin-bottom: 10px;
 }
 
 
 
-.three-37 p, .three-38 p, .three-39 p {
+.three-37 p,
+.three-38 p,
+.three-39 p {
   font-size: 2.5vh !important;
   margin-bottom: 10px;
   text-align: center !important;
@@ -669,7 +673,9 @@ FLOTANTES FIN
 
 
 
-.three-37, .three-38, .three-39 {
+.three-37,
+.three-38,
+.three-39 {
   border: #000 solid 2px;
   padding: 2vh 2vw;
   background-color: rgba(255, 255, 255, 0.8);
@@ -690,7 +696,9 @@ FLOTANTES FIN
     gap: 3vh;
   }
 
-  .three-37, .three-38, .three-39 {
+  .three-37,
+  .three-38,
+  .three-39 {
     width: 80vw;
   }
 }
@@ -699,15 +707,16 @@ FLOTANTES FIN
   .row:has(.three-37, .three-38, .three-39) {
     grid-template-columns: repeat(2, 1fr);
   }
-  
-  .three-37, .three-38, .three-39 {
+
+  .three-37,
+  .three-38,
+  .three-39 {
     width: 40vw;
   }
 }
 
 
-.three-37
-.contenido-banner .btn-blue {
+.three-37 .contenido-banner .btn-blue {
   width: fit-content;
 }
 
@@ -1521,7 +1530,7 @@ FIN GALERIA
 }
 
 .contenido-banner-internas div h1 {
-  font-weight: 600;
+  font-weight: 900;
   font-size: 5vh;
   color: var(--tertiary-color);
   font-family: 'Teachers', sans-serif;
@@ -1532,6 +1541,9 @@ FIN GALERIA
   margin-left: 2vw;
   text-transform: capitalize;
   font-size: 2vh;
+  font-family: 'Teachers', sans-serif;
+  font-weight: 400;
+
 }
 
 .contenido-banner-internas div div {
@@ -1539,4 +1551,6 @@ FIN GALERIA
   margin-left: 2vw;
   text-transform: capitalize;
   font-size: 2vh;
+  font-family: 'Teachers', sans-serif;
+  font-weight: 400;
 }
