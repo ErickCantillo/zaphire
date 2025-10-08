@@ -833,7 +833,7 @@ FLOTANTES FIN
   font-weight: 600;
   font-size: 4vh;
   text-transform: capitalize;
-  font-family: 'Teachers', sans-serif;
+  font-family: 'Audiowide', sans-serif;
   color: #FE7300;
 }
 
@@ -1352,7 +1352,7 @@ FIN GALERIA
   font-weight: 600;
   font-size: 4vh;
   text-transform: capitalize;
-  font-family: 'Teachers', sans-serif;
+  font-family: 'Audiowide', sans-serif;
   color: #FE7300;
   margin-bottom: 4vh;
 }
@@ -1431,6 +1431,9 @@ FIN GALERIA
   font-size: 2vh;
   color: var(--gris-medio);
   text-align: center;
+  font-family: 'Audiowide', sans-serif;
+  font-weight: 300;
+
 }
 
 .contenido-nosotros .caja-contenido-simple .descripcion {
@@ -1533,7 +1536,7 @@ FIN GALERIA
   font-weight: 900;
   font-size: 5vh;
   color: var(--tertiary-color);
-  font-family: 'Teachers', sans-serif;
+  font-family: 'Audiowide', sans-serif;
 }
 
 .contenido-banner-internas div div .inicio {
@@ -1541,7 +1544,7 @@ FIN GALERIA
   margin-left: 2vw;
   text-transform: capitalize;
   font-size: 2vh;
-  font-family: 'Teachers', sans-serif;
+  font-family: 'Audiowide', sans-serif;
   font-weight: 400;
 
 }
@@ -1551,6 +1554,6 @@ FIN GALERIA
   margin-left: 2vw;
   text-transform: capitalize;
   font-size: 2vh;
-  font-family: 'Teachers', sans-serif;
+  font-family: 'Audiowide', sans-serif;
   font-weight: 400;
 }
