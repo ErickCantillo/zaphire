@@ -111,7 +111,7 @@
       <div class="col-12">
         <hr>
         <span class="text-center d-block" style="font-size: 2vh;">
-          &copy; ©Todos los Derechos Reservados <?php echo date('Y'); ?> - Desarrollado por Omega Soluciones Web
+          &copy; Todos los Derechos Reservados <?php echo date('Y'); ?> - Desarrollado por Omega Soluciones Web
         </span>
       </div>
     </div>
