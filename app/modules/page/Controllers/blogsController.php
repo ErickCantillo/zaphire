@@ -8,5 +8,12 @@ class Page_blogsController extends Page_mainController
     $this->_view->banner = $this->template->banner(5);
     $this->_view->seccion = 5;
     $this->_view->contenido = $this->template->getContentseccion(5, 'Blog');
+    $this->_view->blogs = $this->getBlogs();
+  }
+
+
+  private function getBlogs(){
+    $blogModel = new Administracion_Model_DbTable_Blog();
+    return $blogModel->getlist();
   }
 }
