@@ -110,7 +110,7 @@
       </div>
       <div class="col-12">
         <hr>
-        <span class="text-center d-block" style="font-size: 2vh;">
+        <span class="text-center d-block" style="font-size: 2.2h;">
           &copy; Todos los Derechos Reservados <?php echo date('Y'); ?> - Desarrollado por Omega Soluciones Web
         </span>
       </div>
