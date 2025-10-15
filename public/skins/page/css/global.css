@@ -503,8 +503,8 @@ FLOTANTES INICIO
   display: flex;
   flex-direction: column;
   position: fixed;
-  right: 0px;
-  bottom: 10%;
+  right: 2vw;
+  bottom: 5%;
   z-index: 10;
 
   justify-content: center;
