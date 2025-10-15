@@ -26,6 +26,8 @@ class Page_mainController extends Controllers_Abstract
 		$informacion->info_pagina_scripts = '';
 
 		$this->_view->infopage = $informacion;
+		$clientes = new Administracion_Model_DbTable_Clientes();
+		$this->_view->clientes = $clientes->getList();
 
 		$this->getLayout()->setData("meta_description", $informacion->info_pagina_descripcion);
 		$this->getLayout()->setData("meta_keywords", $informacion->info_pagina_tags);

@@ -29,6 +29,12 @@
      Administrador de Blogs
     </a>
   </li>
+  <li <?php if ($this->botonpanel == 6) { ?>class="activo" <?php } ?>>
+    <a href="/administracion/clientes">
+      <i class="fas fa-file-invoice"></i> 
+     Administrador de Clientes
+    </a>
+  </li>
 
   <?php if (Session::getInstance()->get('kt_login_level') == '1') { ?>
     <li <?php if ($this->botonpanel == 4) { ?>class="activo" <?php } ?>>
