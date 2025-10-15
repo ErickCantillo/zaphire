@@ -1,72 +1,85 @@
+
 <style>
 .blog-card {
-	background: #fff; /* fondo blanco como en la imagen */
+	background: #fff;
 	border-radius: 8px;
 	overflow: hidden;
-	box-shadow: 0 0.5vh 2vh rgba(0,0,0,0.08);
-	margin: 0 auto;
+	box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+	max-width: 320px;
+	margin: 0 auto 20px auto;
 	display: flex;
 	flex-direction: column;
 }
 
 .blog-card .card-img {
-	width: calc(100% - 4vw);
-	height: 20vh;
+	width: calc(100% - 40px);
+	height: 200px;
 	object-fit: cover;
 	display: block;
+	margin: 20px auto 12px auto;
 	border-radius: 2px;
 }
 
 .blog-card .card-body {
-	padding: 1vh 2vw;
+	padding: 10px 18px 8px 18px;
 	display: flex;
 	flex-direction: column;
 }
 
 .blog-card .card-title {
-	color: #FE7300; /* color naranja consistente */
+	color: #FE7300;
 	font-weight: 700;
-	font-size: 3vh; /* más grande como en la imagen */
-	/* margin: 6px 0 4px 0; */
+	font-size: 22px;
+	margin: 4px 0 2px 0;
 	line-height: 1.05;
 }
 
 .blog-card .card-date {
 	color: var(--gris-medio);
-	font-size: 2vh;
+	font-size: 13px;
 	font-weight: 600;
-	margin-bottom: 6px;
+	margin-bottom: 8px;
 }
 
-
+.blog-card .card-divider {
+	border: none;
+	height: 1px;
+	background: var(--gris-claro);
+	margin: 10px 0 12px 0;
+}
 
 .blog-card .card-excerpt {
 	color: var(--gris-oscuro);
-	font-size: 1.8vh;
-	line-height: 1.7;
+	font-size: 14px;
+	line-height: 1.6;
 	margin: 0 0 6px 0;
-	/* justificar texto para coincidir con la imagen */
 	text-align: justify;
 }
 
 .blog-card .card-actions {
 	display: flex;
-	justify-content: start; 
-	padding: 1vh 2vw;
+	justify-content: center;
+	padding: 12px 18px 18px 18px;
 }
 
 .blog-card .btn-vermas {
-	padding: 1.2vh 1.6vw;
-	font-size: 1.8vh;
-	/* border-radius: 4px; */
+	padding: 10px 26px;
+	font-size: 14px;
+	border-radius: 6px;
 	background: var(--primary-color);
 	color: #fff;
 	text-decoration: none;
 	display: inline-block;
-	box-shadow: 0 0.1vh 3vw rgba(0,0,0,0.18);
+	box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+	font-weight: 700;
 }
 
-
+@media (max-width: 480px) {
+	.blog-card { max-width: 300px; }
+	.blog-card .card-img { height: 170px; width: calc(100% - 32px); margin: 16px auto 10px auto; }
+	.blog-card .card-title { font-size: 20px; }
+	.blog-card .card-excerpt { font-size: 13px; }
+}
 </style>
 
 
