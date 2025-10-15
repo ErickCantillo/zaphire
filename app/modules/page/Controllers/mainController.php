@@ -1,8 +1,8 @@
-<?php 
+<?php
 
 /**
-*
-*/
+ *
+ */
 
 
 define('ROOT_PATH', dirname(__DIR__));
@@ -10,15 +10,15 @@ class Page_mainController extends Controllers_Abstract
 {
 	public $template;
 
-	public $botonactivo ;
-	
-	
+	public $botonactivo;
+
+
 
 	public function init()
 	{
 		$this->setLayout('page_page');
 		$this->template = new Page_Model_Template_Template($this->_view);
-		
+
 		// Inicializar $informacion como objeto antes de usarlo
 		$informacion = new stdClass();
 		$informacion->info_pagina_descripcion = '';
@@ -29,18 +29,21 @@ class Page_mainController extends Controllers_Abstract
 		$clientes = new Administracion_Model_DbTable_Clientes();
 		$this->_view->clientes = $clientes->getList();
 
+		$publicidadModel = new Page_Model_DbTable_Publicidad();
+		$this->_view->botonesFlotantes = $publicidadModel->getList("publicidad_seccion='100' AND publicidad_estado='1'", "orden ASC");
+
 		$this->getLayout()->setData("meta_description", $informacion->info_pagina_descripcion);
 		$this->getLayout()->setData("meta_keywords", $informacion->info_pagina_tags);
 		$this->getLayout()->setData("scripts", $informacion->info_pagina_scripts);
-		
+
 
 		$header = $this->_view->getRoutPHP('modules/page/Views/partials/header.php');
-		$this->getLayout()->setData("header",$header);
-		
+		$this->getLayout()->setData("header", $header);
+
 		$footer = $this->_view->getRoutPHP('modules/page/Views/partials/footer.php');
-		$this->getLayout()->setData("footer",$footer);
+		$this->getLayout()->setData("footer", $footer);
 		$adicionales = $this->_view->getRoutPHP('modules/page/Views/partials/adicionales.php');
-		$this->getLayout()->setData("adicionales",$adicionales);
+		$this->getLayout()->setData("adicionales", $adicionales);
 		// $this->usuario();
 
 	}
@@ -54,4 +57,4 @@ class Page_mainController extends Controllers_Abstract
 	// 	}
 	// }
 
-} 
+}
