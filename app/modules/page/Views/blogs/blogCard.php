@@ -10,7 +10,7 @@
 }
 
 .blog-card .card-img {
-	/* width: calc(100% - 4vw); */
+	width: calc(100% - 4vw);
 	height: 20vh;
 	object-fit: cover;
 	display: block;
