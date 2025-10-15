@@ -14,6 +14,6 @@ class Page_blogsController extends Page_mainController
 
   private function getBlogs(){
     $blogModel = new Administracion_Model_DbTable_Blog();
-    return $blogModel->getlist();
+    return $blogModel->getlist('', 'blog_fecha DESC');
   }
 }
