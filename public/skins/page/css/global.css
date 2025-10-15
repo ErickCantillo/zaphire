@@ -1528,6 +1528,7 @@ FIN GALERIA
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
+  padding-top: 0.7vh;
 }
 
 .contenido-banner-internas div h1 {
